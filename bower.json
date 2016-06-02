@@ -1,0 +1,16 @@
+{
+  "name": "tipi.component.wordpress",
+  "homepage": "https://github.com/toolbarthomas/tipi.component.wordpress",
+  "authors": [
+    "Thomas van der Velde <contact@toolbarthomas.net>"
+  ],
+  "description": "Default styling for Tipi based Wordpress Themes.",
+  "keywords": [
+    "toolbarthomas",
+    "modular",
+    "tipi",
+    "wordpress"
+  ],
+  "license": "MIT",
+  "main": "_tipi.component.wordpress.scss"
+}

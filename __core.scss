@@ -1,0 +1,70 @@
+@mixin core_wordpress {
+	.alignnone {
+		text-align: inherit;
+	}
+
+	.alignleft {
+		text-align: left;
+	}
+
+	.alignright {
+		text-align: right;
+	}
+
+	.aligncenter {
+		text-align: center;
+	}
+
+	img {
+		&[class*="wp-image"] {
+			height: auto;
+			max-width: $wordpress-image-max-width;
+		}
+
+		&.alignnone {
+			float: none;
+		}
+
+		&.alignleft {
+			float: left;
+			margin: $wordpress-image-margin-top $wordpress-image-margin-right $wordpress-image-margin-bottom 0;
+		}
+
+		&.alignright {
+			float: right;
+			margin: $wordpress-image-margin-top 0 $wordpress-image-margin-bottom;
+		}
+
+		&.aligncenter {
+			float: none;
+			margin: $wordpress-image-margin-top auto $wordpress-image-margin-bottom;
+		}
+
+		&.size-full {
+			width: 100%;
+			max-width: none;
+		}
+
+		&.size-large,
+		&.size-medium,
+		&.size-thumbnail {
+			width: auto;
+		}
+	}
+
+	.wp-caption {
+		position: relative;
+		width: auto !important;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	@include breakpoint(false, 600px) {
+		html #wpadminbar {
+			position: fixed;
+		}
+	}
+}
