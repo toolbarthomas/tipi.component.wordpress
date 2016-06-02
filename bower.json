@@ -12,8 +12,5 @@
     "wordpress"
   ],
   "license": "MIT",
-  "main": "_tipi.component.wordpress.scss",
-  "dependencies": {
-    "tipi": "^0.8.0"
-  }
+  "main": "_tipi.component.wordpress.scss"
 }
