@@ -62,9 +62,20 @@
 		}
 	}
 
-	@include breakpoint(false, 600px) {
-		html #wpadminbar {
-			position: fixed;
+	html #wpadminbar {
+		position: fixed;
+		left: 0;
+		width: 100%;
+		top: 0;
+	}
+
+	body.customize-support {
+		.top-bar.__top-bar--ready {
+			margin-top: 32px;
+
+			@include breakpoint(false, 600px) {
+				margin-top: 46px;
+			}
 		}
 	}
 }
