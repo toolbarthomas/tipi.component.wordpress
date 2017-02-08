@@ -54,7 +54,9 @@
 
 	.wp-caption {
 		position: relative;
-		width: auto !important;
+		@if $wordpress-caption-full-width != false {
+			width: auto !important;
+		}
 
 		img {
 			width: 100%;
